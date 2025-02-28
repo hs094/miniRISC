@@ -54,11 +54,3 @@ csRISC is a custom 32-bit RISC processor designed for the Artix-7 FPGA platform.
 ### Arithmetic Units
 - 16-bit Carry Lookahead Adder with augmented 4-bit CLA blocks
 - Dedicated Lookahead Carry Unit
-
-## License
-
-[Add License Information]
-
-## Contributors
-
-[Add Contributors Information]
