@@ -1,58 +1,61 @@
-# ISE Generated Files
-*.ngc
-*.ngd
-*.ncd
-*.pad
-*.par
-*.pcf
-*.ptwx
-*.twr
-*.twx
-*.unroutes
-*.xpi
-*.mrp
-*.map
-*.bld
-*.cmd_log
-*.drc
-*.lso
-*.xise
-*.gise
-*.bgn
-*.bit
-*.xwbt
-_xmsgs/
-_ngo/
-iseconfig/
-xlnx_auto_0_xdb/
-xst/
+# Build and Generated Files (Do not track these)
 
-# Simulation Files
-isim/
-*.wdb
-*.log
-*.cmd
-*.exe
-*_beh.prj
-*_isim_beh.exe
+# ISE Generated Files
+*.ngc           # Synthesized netlist
+*.ngd           # Native Generic Database
+*.ncd           # Native Circuit Description
+*.pad           # Pad file
+*.par           # Place and Route file
+*.pcf           # Physical Constraints File
+*.ptwx          # TRACE report
+*.twr           # Timing report
+*.twx           # Timing report XML
+*.unroutes      # Unrouted nets
+*.xpi           # Program info
+*.mrp           # Map report
+*.map           # Map file
+*.bld           # Build log
+*.cmd_log       # Command log
+*.drc           # DRC report
+*.lso           # Library Search Order
+*.xise          # ISE project file
+*.gise          # Generated ISE project file
+*.bgn           # Bitgen log
+*.bit           # Bitstream file
+*.xwbt          # Binary Target file
+_xmsgs/         # Message files
+_ngo/           # NGD Build directory
+iseconfig/      # ISE configuration directory
+xlnx_auto_0_xdb/ # Auto-generated XDB directory
+xst/            # XST working directory
+
+# Simulation Generated Files
+isim/           # ISim generated files
+*.wdb           # Waveform database
+*.log           # Log files
+*.cmd           # Command files
+*.exe           # Simulation executable
+*_beh.prj       # Behavioral project file
+*_isim_beh.exe  # ISim executable
 fuseRelaunch.cmd
 
-# IP Core Generated
-ipcore_dir/*.asy
-ipcore_dir/*.gise
-ipcore_dir/*.ncf
-ipcore_dir/*.sym
-ipcore_dir/*.veo
-ipcore_dir/*.xco
-ipcore_dir/*.xise
-ipcore_dir/tmp/
-ipcore_dir/_xmsgs/
+# IP Core Generated Files
+ipcore_dir/*.asy      # IP core symbol
+ipcore_dir/*.gise     # Generated ISE file
+ipcore_dir/*.ncf      # Constraints
+ipcore_dir/*.sym      # Symbol
+ipcore_dir/*.veo      # Verilog template
+ipcore_dir/*.xco      # Core configuration
+ipcore_dir/*.xise     # ISE project file
+ipcore_dir/tmp/       # Temporary files
+ipcore_dir/_xmsgs/    # Message files
 
-# OS Generated Files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# Files that should be tracked:
+# Source Files
+rtl/**/*.v            # Verilog source files
+sim/**/*.v            # Testbench files
+synth/*.ucf           # User constraint files
+scripts/*.tcl         # TCL scripts
+sim/memory_init/*.coe # Memory initialization files
+*.xst                 # Synthesis script
+README.md             # Documentation
