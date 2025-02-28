@@ -1,0 +1,48 @@
+csRISC/
+├── rtl/
+│   ├── core/
+│   │   ├── KGP-RISC.v             # Main processor file
+│   │   ├── alu.v
+│   │   ├── alu_control.v
+│   │   ├── register_file.v
+│   │   ├── program_counter.v
+│   │   ├── main_control.v
+│   │   ├── instruction_fetcher.v
+│   │   └── branching_mechanism.v
+│   ├── memory/
+│   │   └── data_memory.v
+│   └── arithmetic/
+│       ├── CLA_16bit_withLCU.v
+│       ├── CLA_4bit_augmented.v
+│       └── LookaheadCarryUnit.v
+│
+├── ip_cores/
+│   ├── instructions/
+│   │   ├── instructions.xco       # IP core configuration
+│   │   ├── instructions.v         # Generated Verilog
+│   │   ├── instructions.mif       # Memory initialization
+│   │   └── instructions_xmdf.tcl  # IP core metadata
+│   └── datastore/
+│       ├── datastore.xco
+│       ├── datastore.v
+│       ├── datastore.mif
+│       └── datastore_xmdf.tcl
+│
+├── sim/
+│   ├── testbench/
+│   │   ├── KGP_RISC_tb.v         # Main testbench
+│   │   └── register_file_tb.v     # Register file testbench
+│   └── memory_init/
+│       ├── instr.coe             # Instruction memory content
+│       └── data.coe              # Data memory content
+│
+├── synth/
+│   ├── KGP_RISC.xst             # Synthesis script
+│   └── constraints/
+│       └── KGP_RISC.ucf         # User constraints file
+│
+└── scripts/
+    ├── create_instructions.tcl
+    ├── create_datastore.tcl
+    ├── edit_instructions.tcl
+    └── edit_datastore.tcl
